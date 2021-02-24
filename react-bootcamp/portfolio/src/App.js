@@ -1,5 +1,12 @@
 import React,{Component}  from 'react';
 
+class Regularclass{}
+class Componentclass extends Component{}
+const regularclass=new Regularclass();
+const componentclass=new Componentclass();
+console.log("Regular class=",regularclass);
+console.log("componentclass=",componentclass);
+
 class App extends Component{
     render(){
         return(
