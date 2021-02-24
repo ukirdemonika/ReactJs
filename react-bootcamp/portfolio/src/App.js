@@ -11,6 +11,15 @@ class App extends Component{
     constructor(){
         super();
         this.state={displayBio:false};   //change false to true then visible the state div on webpage
+
+        // this.readMore=()=>{
+        //     console.log(this);
+        // }
+        //bind the readmore to the component of "this" object
+        this.toggleDisplayBio=this.toggleDisplayBio.bind(this);
+    }
+    toggleDisplayBio(){
+        this.setState({displayBio:!this.state.displayBio});
     }
     render(){
         // const bio=this.state.displayBio?(
@@ -29,8 +38,14 @@ class App extends Component{
                         <div>
                             <p>I live in India.</p>
                             <p>I like javascript, and ReactJs.</p>
+                            <button onClick={this.toggleDisplayBio}>Show less</button>
+
                         </div>
-                    ):null  
+                    ):(
+                        <div>
+                            <button onClick={this.toggleDisplayBio}>Read more</button>
+                        </div>
+                    )  
                 } 
             </div>
         )
