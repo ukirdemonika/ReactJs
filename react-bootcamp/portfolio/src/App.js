@@ -8,7 +8,8 @@ import React,{Component}  from 'react';
 // console.log("componentclass=",componentclass);
 
 class App extends Component{
-    constructor(){
+    state={displayBio:false};
+    /*constructor(){
         super();
         this.state={displayBio:false};   //change false to true then visible the state div on webpage
 
@@ -17,8 +18,8 @@ class App extends Component{
         // }
         //bind the readmore to the component of "this" object
         this.toggleDisplayBio=this.toggleDisplayBio.bind(this);
-    }
-    toggleDisplayBio(){
+    }*/
+    toggleDisplayBio=()=>{
         this.setState({displayBio:!this.state.displayBio});
     }
     render(){
