@@ -1,4 +1,5 @@
 import React,{Component}  from 'react';
+import Projects from './Projects';
 
 // class Regularclass{}
 // class Componentclass extends Component{}
@@ -47,8 +48,14 @@ class App extends Component{
                             <button onClick={this.toggleDisplayBio}>Read more</button>
                         </div>
                     )  
-                } 
+                }<hr/>
+                <div>
+                    <Projects />
+                </div> 
+                
             </div>
+            
+
         )
     }
 }
