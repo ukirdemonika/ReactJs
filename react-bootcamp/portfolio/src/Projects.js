@@ -6,7 +6,7 @@ class Project extends Component{
    
     render(){
         console.log(this.props);
-        const { title,image,description,link}=this.props.Project;
+        const { title,image,description,link}=this.props.project;
         return(
             //<div>{this.props.Project.title}</div>
             <div style={{display:'inline-block',width:300,margin:10}}>
@@ -31,7 +31,7 @@ class Projects extends Component{
                         return (
                            // <div key={PROJECT.id}>{PROJECT.title}</div>
                            //using props
-                           <Project  key={PROJECT.id} Project={PROJECT}/>
+                           <Project  key={PROJECT.id} project={PROJECT}/>
                         )
                     })
                 }
