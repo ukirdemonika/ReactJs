@@ -1,6 +1,6 @@
 import React,{Component}  from 'react';
 import Projects from './Projects';
-import SocialProfiles from 'SocialProfiles';
+import SocialProfiles from './SocialProfiles';
 // class Regularclass{}
 // class Componentclass extends Component{}
 // const regularclass=new Regularclass();
