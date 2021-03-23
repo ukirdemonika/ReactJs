@@ -2,6 +2,7 @@ import React,{Component}  from 'react';
 import Projects from './Projects';
 import SocialProfiles from './SocialProfiles';
 import profile from './assets/profile.png';
+import Title from './Title';
 // class Regularclass{}
 // class Componentclass extends Component{}
 // const regularclass=new Regularclass();
@@ -36,7 +37,8 @@ class App extends Component{
                 <img src={profile} alt="profile" className="profile" />
                 <h1>Hello,</h1>
                 
-                <p>My name is Monika.I'm a software engineer.</p>
+                <p>My name is Monika.</p>
+                <Title />
                 {/* {bio} */}
                 {
                     this.state.displayBio?(
